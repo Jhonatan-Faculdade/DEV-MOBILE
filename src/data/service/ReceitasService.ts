@@ -2,9 +2,9 @@
 
 import { ApiConfig } from "../../config";
 import httpReceita from "../../infra/http/HttpReceita";
-import { List } from "../model";
+import { Category, List } from "../model";
 
-export const getCategory = async (): Promise<List[]> => {
-    const response = await httpReceita.get<List>(ApiConfig.GET_LIST_CATEGORY)
+export const getCategory = async (): Promise<Category[]> => {
+    const response = await httpReceita.get<List>(ApiConfig.GET_TOP_LIST)
     return response.data.categories
 }

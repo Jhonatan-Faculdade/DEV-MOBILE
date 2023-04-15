@@ -7,8 +7,8 @@ const Stack = createNativeStackNavigator<AppStackParamList>()
 
 const AppNavigator = () => {
     return (
-        <Stack.Navigator initialRouteName="List">
-            <Stack.Screen name="List" component={ListRevenue} />
+        <Stack.Navigator initialRouteName="Category">
+            <Stack.Screen name="Category" component={List} />
             <Stack.Screen name="Details" component={DetailsRevenue} />
         </Stack.Navigator>
     )

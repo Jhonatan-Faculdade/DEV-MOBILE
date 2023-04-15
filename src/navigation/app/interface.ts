@@ -1,9 +1,13 @@
 import { NativeStackNavigationProp } from "@react-navigation/native-stack"
-import { DetailsNewsScreenParams } from "../../screen/details"
+
+
+import { List } from "../../data/model"
+import { CategoryReceitasScreenParams } from "../../screen/ReceitasList"
 
 export type AppStackParamList = {
     List: undefined,
-    Details: DetailsNewsScreenParams,
+    Details: CategoryReceitasScreenParams,
+    Categories: undefined,
 }
 
 export type AppNavigatorProps = NativeStackNavigationProp<AppStackParamList>
